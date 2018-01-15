@@ -1,0 +1,113 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Metronic "Aircv" Frontend Freebie</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="~/Areas/CV/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+    <link href="~/Areas/CV/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="~/Areas/CV/css/animate.css" rel="stylesheet" />
+    <!-- THEME STYLES -->
+    <link href="~/Areas/CV/css/layout.min.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="#body">
+                            <img class="logo-img logo-img-main" src="~/Areas/CV/img/logo.png" alt="Asentus Logo">
+                            <img class="logo-img logo-img-active" src="~/Areas/CV/img/logo-dark.png" alt="Asentus Logo">
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+    @RenderBody()
+    <footer class="footer">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="footer-logo" src="~/Areas/CV/img/logo-dark.png" alt="Aircv Logo">
+                </div>
+               
+                <div class="col-xs-6 text-right sm-text-left">
+                    <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aircv/">Aircv</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="~/Areas/CV/vendor/jquery.min.js"></script>
+    <script src="~/Areas/CV/vendor/jquery-migrate.min.js"></script>
+    <script src="~/Areas/CV/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="~/Areas/CV/vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/jquery.appear.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="~/Areas/CV/js/layout.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/js/components/progress-bar.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/js/components/masonry.min.js" type="text/javascript"></script>
+    <script src="~/Areas/CV/js/components/wow.min.js" type="text/javascript"></script>
+
+</body>
+<!-- END BODY -->
+</html>

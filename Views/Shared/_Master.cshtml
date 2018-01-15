@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Software Corners</title>
+    <title>About - Flexor Bootstrap Theme</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -28,43 +27,37 @@
     <meta name="twitter:image" content="">
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="~/img/backgrounds/favicon2.ico">
+    <link rel="shortcut icon" href="img/icons/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
     <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
 
 
-    <!-- Bootstrap CSS File -->
-    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   
-    <!-- Libraries CSS Files -->
-    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="~/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="~/lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
-    <link href="~/lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
+<!-- Bootstrap CSS File -->
+<link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Main Stylesheet File -->
-    <link href="~/Content/style.css" rel="stylesheet">
-    <!-- Main Stylesheet File -->
+<!-- Libraries CSS Files -->
+<link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+<link href="~/lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
+<link href="~/lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
 
-    <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
-    <link href="#" id="colour-scheme" rel="stylesheet">
-    
+<!-- Main Stylesheet File -->
+<link href="~/Content/style.css" rel="stylesheet">
+<!-- Main Stylesheet File -->
+<!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
+<link href="#" id="colour-scheme" rel="stylesheet">
+
 </head>
-<style type="text/css">
-    .navbar-brand {
-        background: url(../img/logo4.png) left top no-repeat;
-    }
-</style>
 
-<body class="page-index has-hero">
+
+<body class="page-about">
     <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
-    <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
-        @RenderBody()
+    <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.8">
         <div id="navigation" class="wrapper">
+            <!--Hidden Header Region-->
             <div class="header-hidden collapse">
                 <div class="header-hidden-inner container">
                     <div class="row">
@@ -131,23 +124,16 @@
                     <!--mobile collapse menu button-->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     <!--social media icons-->
-                    <div class="navbar-text social-media social-media-inline pull-right">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                    </div>
                     <!--everything within this div is collapsed on mobile-->
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav" id="main-menu">
                             <li class="icon-link">
                                 <a href="index.html"><i class="fa fa-home"></i></a>
                             </li>
-                            
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
                                 <!-- Dropdown Menu -->
-                                
+
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Product</a>
@@ -177,6 +163,10 @@
                                 <!-- Dropdown Menu -->
                             </li>
                             <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs</a>
+                                <!-- Dropdown Menu -->
+                            </li>
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us</a>
                                 <!-- Dropdown Menu -->
 
@@ -187,250 +177,18 @@
                 </div>
             </div>
         </div>
-        <div class="hero" id="highlighted">
-            <div class="inner">
-                <!--Slideshow-->
-                <div id="highlighted-slider" class="container">
-                    <div class="item-slider" data-toggle="owlcarousel" data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp"}'>
-                        <!--Slideshow content-->
-                        <!--Slide 1-->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-md-push-6 item-caption">
-                                    <h2 class="h1 text-weight-light">
-                                       <span class="text-primary">Software </span>Corners
-                                    </h2>
-                                    <h4>
-                                      Software Company Based in Noida
-                                    </h4>
-                                    <p> One Site for all Software Application.Software Corners is a Software Development and Consulting company. We offer highly innovative and cost effective IT solutions using the latest technologies</p>
-                                </div>
-                                <div class="col-md-6 col-md-pull-6 hidden-xs">
-                                    <img src="img/slides/slide1.png" alt="Slide 1" class="center-block img-responsive">
-                                </div>
-                            </div>
-                        </div>
-                        <!--Slide 2-->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 text-right-md item-caption">
-                                    <h2 class="h1 text-weight-light">
-                                        <span class="text-primary">Software</span> Corners
-                                    </h2>
-                                    <h4>
-                                        High quality, responsive Website!
-                                    </h4>
-                                    <p> We  aims to be a global IT company providing end to end software solutions that address to the needs of the new economy and aims to build businesses based on value, speed, information, skills and capabilities.</p>
-                                </div>
-                                <div class="col-md-6 hidden-xs">
-                                    <img src="img/slides/slide1.png" alt="Slide 2" class="center-block img-responsive">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div id="content">
-        <!-- Mission Statement -->
-        <div class="mission text-center block block-pd-sm block-bg-noise">
-            <div class="container">
-                <h2 class="text-shadow-white">
-                    We are a IT Company based in Noida. We are experienced professionals in building websites, applications, mobile solutions.
-                </h2>
-            </div>
-        </div>
-        <!--Showcase-->
-        <div class="showcase block block-border-bottom-grey">
-            <div class="container">
-                <h2 class="block-title">
-                    Showcase
-                </h2>
-                <p>
-                    This is Photoshop's version of our products.Our Products are used everywhere in India.
-                </p>
-                <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
-                    <div class="item">
-                        <a href="#" class="overlay-wrapper">
-                            <img src="img/showcase/project1.png" alt="Project 1 image" class="img-responsive underlay">
-                            <span class="overlay">
-                                <span class="overlay-content"> <span class="h4">Project 1</span> </span>
-                            </span>
-                        </a>
-                        <div class="item-details bg-noise">
-                            <h4 class="item-title">
-                                <a href="#">Esimonline</a>
-                            </h4>
-                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="overlay-wrapper">
-                            <img src="img/showcase/project2.png" alt="Project 2 image" class="img-responsive underlay">
-                            <span class="overlay">
-                                <span class="overlay-content"> <span class="h4">Project 2</span> </span>
-                            </span>
-                        </a>
-                        <div class="item-details bg-noise">
-                            <h4 class="item-title">
-                                <a href="#">Project 2</a>
-                            </h4>
-                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="overlay-wrapper">
-                            <img src="img/showcase/project3.png" alt="Project 3 image" class="img-responsive underlay">
-                            <span class="overlay">
-                                <span class="overlay-content"> <span class="h4">Project 3</span> </span>
-                            </span>
-                        </a>
-                        <div class="item-details bg-noise">
-                            <h4 class="item-title">
-                                <a href="#">Project 3</a>
-                            </h4>
-                            <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services -->
-        <div class="services block block-bg-gradient block-border-bottom">
-            <div class="container">
-                <h2 class="block-title">
-                    Our Services
-                </h2>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-group fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="text-weight-strong">
-                            User Experience / Information Architecture
-                        </h4>
-                        <p>Information architecture involves the creation and structure of a website, app, or other type of digital project allowing users to understand where they are, and where the information they are seeking is in relation to where they are. .</p>
-                        <p>
-                            <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="text-weight-strong">
-                            User Interface Design / User Interface Theming
-                        </h4>
-                        <p>Using UI theme designer you can create your own themes to adapt the visual appearance of applications. One single tool for theming and branding SAP's key user interfaces.A results in categorization, schema, mapping, and navigation that is intuitive and user-friendly</p>
-                        <p>
-                            <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="text-weight-strong">
-                            Code &amp; Development / Implementation Support
-                        </h4>
-                        <p>Code & Development / Implementation Support. Programming tools for interactive systems provide a means of effectively translating abstract designs and usability principles into an executable form.</p>
-                        <p>
-                            <a href="#" class="btn btn-more i-right">Learn More <i class="fa fa-angle-right"></i></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--
-        Background image callout with CSS overlay
-        Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQuery .block-bg-overlay = overlays the background image, colour is inherited from block-bg-* classes .block-bg-overlay-NUMBER = determines opcacity value of overlay from 1-9 (default is 5) ie. .block-bg-overlay-2 or .block-bg-overlay-6
-        -->
-        <div class="block block-pd-sm block-bg-grey-dark block-bg-overlay block-bg-overlay-6 text-center" data-block-bg-img="https://picjumbo.imgix.net/HNCK1088.jpg?q=40&amp;w=1650&amp;sharp=30" data-stellar-background-ratio="0.3">
-            <h2 class="h-xlg h1 m-a-0">
-                <span data-counter-up>100</span>s
-            </h2>
-            <h3 class="h-lg m-t-0 m-b-lg">
-                Of Happy Customers!
-            </h3>
-            <p>
-                <a href="#" class="btn btn-more btn-lg i-right">Join them today! <i class="fa fa-angle-right"></i></a>
-            </p>
-        </div>
-        <!--Customer testimonial & Latest Blog posts-->
-        <div class="testimonials block-contained">
-            <div class="row">
-                <!--Customer testimonial-->
-                <div class="col-md-6 m-b-lg">
-                    <h3 class="block-title">
-                        Testimonials
-                    </h3>
-                    <blockquote>
-                        <p>Our productivity &amp; sales are up! Customers are happy &amp; we couldn't be happier with this product!</p>
-                        <img src="img/misc/charles-quote.png" alt="Charles Spencer Chaplin">
-                        <small>
-                            <strong>Charles Chaplin</strong>
-                            <br>
-                            British comic actor
-                        </small>
-                    </blockquote>
-                </div>
-                <!--Latest Blog posts-->
-                <div class="col-md-6 blog-roll">
-                    <h3 class="block-title">
-                        Latest From Our Blog
-                    </h3>
-                    <!-- Blog post 1-->
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <!-- Date desktop -->
-                            <div class="date-wrapper"> <span class="date-m">Feb</span> <span class="date-d">01</span> </div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#" class="text-weight-strong">amet urna integer urna enim, sit arcu pid in nec?</a>
-                            </h4>
-                            <!-- Meta details mobile -->
-                            <ul class="list-inline meta text-muted visible-xs">
-                                <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Fri 1st Feb 2013</li>
-                                <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                            </ul>
-                            <p>
-                                Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
-                                <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Blog post 2 -->
-                    <div class="media">
-                        <div class="media-left hidden-xs">
-                            <!-- Date desktop -->
-                            <div class="date-wrapper"> <span class="date-m">Jan</span> <span class="date-d">17</span> </div>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <a href="#" class="text-weight-strong">a nec in sed hac ultrices cursus</a>
-                            </h4>
-                            <!-- Meta details mobile -->
-                            <ul class="list-inline meta text-muted visible-xs">
-                                <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Thu 17th Jan 2013</li>
-                                <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
-                            </ul>
-                            <p>
-                                Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Aenean at massa leo. Vestibulum in varius arcu.
-                                <a href="#">Read more <i class="fa fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    @RenderBody()
+    
+    <!-- Call out block -->
+    <div class="block block-bg-primary block-bg-overlay block-bg-overlay-5 text-center" data-block-bg-img="https://picjumbo.imgix.net/HNCK8991.jpg?q=40&amp;w=1650&amp;sharp=30" data-stellar-background-ratio="0.3">
+        <h2 class="m-t-0">
+            Be part of our amazing team!
+        </h2>
+        <p class="m-a-0">
+            <a href="#" class="btn btn-more btn-lg i-right">We're Hiring <i class="fa fa-angle-right"></i></a>
+        </p>
     </div>
-    <!-- /content -->
     <!-- Call out block -->
     <div class="block block-pd-sm block-bg-primary">
         <div class="container">
@@ -442,33 +200,34 @@
                     <div class="row">
                         <!--Client logos should be within a 120px wide by 60px height image canvas-->
                         <div class="col-xs-6 col-md-2">
+                          
                             <a href="https://bootstrapmade.com" title="Client 1">
-                                <img src="img/clients/client1.png" alt="Client 1 logo" class="img-responsive">
+                                <img src="~/img/clients/client1.png" alt="Client 1 logo" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-2">
                             <a href="https://bootstrapmade.com" title="Client 2">
-                                <img src="img/clients/client2.png" alt="Client 2 logo" class="img-responsive">
+                                <img src="~/img/clients/client2.png" alt="Client 2 logo" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-2">
                             <a href="https://bootstrapmade.com" title="Client 3">
-                                <img src="img/clients/client3.png" alt="Client 3 logo" class="img-responsive">
+                                <img src="~/img/clients/client3.png" alt="Client 3 logo" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-2">
                             <a href="https://bootstrapmade.com" title="Client 4">
-                                <img src="img/clients/client4.png" alt="Client 4 logo" class="img-responsive">
+                                <img src="~/img/clients/client4.png" alt="Client 4 logo" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-2">
                             <a href="https://bootstrapmade.com" title="Client 5">
-                                <img src="img/clients/client5.png" alt="Client 5 logo" class="img-responsive">
+                                <img src="~/img/clients/client5.png" alt="Client 5 logo" class="img-responsive">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-2">
                             <a href="https://bootstrapmade.com" title="Client 6">
-                                <img src="img/clients/client6.png" alt="Client 6 logo" class="img-responsive">
+                                <img src="~/img/clients/client6.png" alt="Client 6 logo" class="img-responsive">
                             </a>
                         </div>
                     </div>
@@ -479,7 +238,7 @@
 
     <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="img/bg_footer-map.png" data-stellar-background-ratio="0.4">
         <div class="container">
-
+            <a href="#top" class="scrolltop">Top</a>
             <div class="row" id="contact">
 
                 <div class="col-md-3">
@@ -538,7 +297,6 @@
                 </div>
 
             </div>
-
             <div class="row subfooter">
                 <div class="col-md-7">
                     <p>Copyright © Flexor Theme</p>
@@ -560,9 +318,6 @@
                     </ul>
                 </div>
             </div>
-
-            <a href="#top" class="scrolltop">Top</a>
-
         </div>
     </footer>
 
@@ -576,10 +331,9 @@
     <script src="contactform/contactform.js"></script>
     <script src="~/Scripts/color-switcher.js"></script>
     <script src="~/Scripts/custom.js"></script>
-    <!-- Template Specisifc Custom Javascript File -->
-  
-   
+
 </body>
 
 </html>
+
 

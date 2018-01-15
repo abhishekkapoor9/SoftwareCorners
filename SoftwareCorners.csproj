@@ -195,6 +195,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\CV\Controllers\CVController.cs" />
+    <Compile Include="Areas\CV\CVAreaRegistration.cs" />
+    <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -211,6 +216,45 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\CV\css\animate.css" />
+    <Content Include="Areas\CV\css\layout-rtl.css" />
+    <Content Include="Areas\CV\css\layout-rtl.min.css" />
+    <Content Include="Areas\CV\css\layout.css" />
+    <Content Include="Areas\CV\css\layout.min.css" />
+    <Content Include="Areas\CV\img\1920x1080\01.jpg" />
+    <Content Include="Areas\CV\img\397x300\01.jpg" />
+    <Content Include="Areas\CV\img\397x300\02.jpg" />
+    <Content Include="Areas\CV\img\397x300\03.jpg" />
+    <Content Include="Areas\CV\img\397x400\01.jpg" />
+    <Content Include="Areas\CV\img\800x400\01.jpg" />
+    <Content Include="Areas\CV\img\logo-dark.png" />
+    <Content Include="Areas\CV\img\logo.png" />
+    <Content Include="Areas\CV\js\components\masonry.js" />
+    <Content Include="Areas\CV\js\components\masonry.min.js" />
+    <Content Include="Areas\CV\js\components\progress-bar.js" />
+    <Content Include="Areas\CV\js\components\progress-bar.min.js" />
+    <Content Include="Areas\CV\js\components\wow.js" />
+    <Content Include="Areas\CV\js\components\wow.min.js" />
+    <Content Include="Areas\CV\js\layout.js" />
+    <Content Include="Areas\CV\js\layout.min.js" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Areas\CV\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Areas\CV\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Areas\CV\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Areas\CV\vendor\bootstrap\js\npm.js" />
+    <Content Include="Areas\CV\vendor\jquery-migrate.min.js" />
+    <Content Include="Areas\CV\vendor\jquery.appear.js" />
+    <Content Include="Areas\CV\vendor\jquery.back-to-top.js" />
+    <Content Include="Areas\CV\vendor\jquery.easing.js" />
+    <Content Include="Areas\CV\vendor\jquery.min.js" />
+    <Content Include="Areas\CV\vendor\jquery.parallax.min.js" />
+    <Content Include="Areas\CV\vendor\jquery.smooth-scroll.js" />
+    <Content Include="Areas\CV\vendor\jquery.wow.min.js" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
@@ -356,6 +400,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\CV\Models\" />
+    <Folder Include="Areas\CV\sass\" />
+    <Folder Include="Areas\User\Controllers\" />
+    <Folder Include="Areas\User\Models\" />
+    <Folder Include="Areas\User\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -375,9 +427,28 @@
     <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="lib\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Areas\CV\Views\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\User\Views\web.config" />
+    <Content Include="Areas\CV\Views\Shared\_master_cv.cshtml" />
+    <Content Include="Areas\CV\Views\CV\Index.cshtml" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Areas\CV\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\CV\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\CV\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Areas\CV\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Areas\CV\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Areas\CV\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Areas\CV\vendor\jquery.min.map" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Shared\_Master.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
